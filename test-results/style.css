@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #fff7e7;
+  color: #f36544;
+}
+
+.page {
+  position: relative;
+  padding: 70px 30px;
+  max-width: 720px;
+  margin: 40px auto;
+  background: #fff7e7;
+  overflow: hidden;
+}
+
+/* Organic shapes */
+.shape-coral {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: #f36544;
+  border-radius: 50% 60% 40% 55%;
+  top: -140px;
+  left: -120px;
+  opacity: 0.18;
+}
+
+.shape-green {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background: #8ba455;
+  border-radius: 60% 45% 55% 40%;
+  bottom: -180px;
+  right: -160px;
+  opacity: 0.18;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Sunday', serif;
+  font-size: 2.6em;
+  margin-bottom: 8px;
+  color: #f36544;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #8ba455;
+  margin-bottom: 35px;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #f36544;
+}
+
+/* Accent box */
+.accent {
+  background: rgba(139, 164, 85, 0.15);
+  padding: 20px;
+  border-radius: 28px;
+  margin-top: 30px;
+  color: #8ba455;
+}
+
+.accent strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #8ba455;
+}
+
+.accent ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #8ba455;
+  opacity: 0.8;
+}
+
+.esp_image {
+  width: 280px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 30px;
+}
+
+.page {
+  background-image: url("images/paper-texture.png");
+  background-size: cover;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+  100% { transform: translateY(0); }
+}
+
+
+.shape-coral,
+.shape-green {
+  animation: slowFloat 14s ease-in-out infinite;
+}
+
+@keyframes slowFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(25px); }
+  100% { transform: translateY(0); }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
